@@ -25,7 +25,7 @@ header {
     position: relative;
     top: 0px;
     width: 100%;
-    height: min(100vh, 100vw);
+    height: min(100vh, 600px);
     overflow: hidden;
     /* background-image: url(Resource/img/bg.jpg); */
 }
@@ -233,6 +233,20 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    .logo img{
+        width: 80px !important;
+    }
+    nav{
+        width: 100vw;
+        gap: 10px;
+    }
+    #signin-language {
+        scale: 0.8 !important;
+    }
+    #languageSelectContainer {
+        display: none !important;
+    }
+
     #footer-links {
         grid-template-columns: 1fr;
     }
