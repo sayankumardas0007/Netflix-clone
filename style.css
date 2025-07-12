@@ -240,12 +240,12 @@ nav {
         width: 100vw;
         gap: 10px;
     }
-    #signin-language {
+    /* #signin-language {
         scale: 0.8 !important;
-    }
-    #languageSelectContainer {
+    } */
+    /* #languageSelectContainer {
         display: none !important;
-    }
+    } */
 
     #footer-links {
         grid-template-columns: 1fr;
