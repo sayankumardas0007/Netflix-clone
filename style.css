@@ -243,9 +243,9 @@ nav {
     /* #signin-language {
         scale: 0.8 !important;
     } */
-    /* #languageSelectContainer {
+    #languageSelectContainer {
         display: none !important;
-    } */
+    }
 
     #footer-links {
         grid-template-columns: 1fr;
