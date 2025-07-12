@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Clone</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="backgroundImage">
+            <img src="Resource/img/bg.jpg" alt="">
+        </div>
+        <nav>
+            <div class="logo" style="z-index: 10;">
+                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo"> -->
+                <img src="Resource/img/logo.svg" alt="Netflix Logo" style="width: 140px;">
+            </div>
+            <div style="display: flex; gap: 10px; z-index: 100;">
+                <div
+                    style="border: 1px solid white; padding: 2px 5px; width: 110px; border-radius: 5px; display: flex;">
+                    <img src="Resource/img/multilanguagelogo.svg" style="filter: invert();" alt="">
+                    <select id="languageSelect"
+                        style="background-color: black; color: white; border: none; padding: 5px;">
+                        <option value="en">English</option>
+                        <option value="hi">हिन्दी</option>
+                        <option value="bn">বাংলা</option>
+                    </select>
+                </div>
+                <div
+                    style="width: 70px; border: 1px solid red; background-color: red; padding: 3px 8px; border-radius: 5px;">
+                    Sign In
+                </div>
+            </div>
+        </nav>
+        <div id="header-content" style="z-index: 100;">
+            <h1 id="header-big-text">Unlimited movies, TV shows and more</h1>
+            <h3>Starts at ₹149. Cancel at any time.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-input-box">
+                <input type="text" placeholder="Email address"
+                    style="padding: 10px; width: max(30vw, 350px); border-radius: 5px; border: none; background-color: #160F0F; color: white; height: 50px;">
+
+                <button id="getStartedButton" style="height: 50px; font-weight: bold;">
+                    Get Started
+                    <img src="Resource/img/right-arrow-svgrepo-com.svg" alt="" style="height: 15px; filter: invert();">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <div id="banner-text">
+                    <h1>Enjoy on your TV</h1>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+                <div id="video-container">
+                    <video src="Resource/vdo/video1.m4v" autoplay loop muted></video>
+                </div>
+            </div>
+        </section>
+        <section class="movies-section">
+            <h2>More reasons to join</h2>
+            <div class="movies-list">
+                <div class="movies-box">
+                    <h1>Enjoy on your TV</h1>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    <img src="Resource/img/televisions-tv-monitor-svgrepo-com.svg" alt="">
+                </div>
+                <div class="movies-box">
+                    <h1>Download your shows to watch offline</h1>
+                    <p>Save your favourites easily and always have something to watch.</p>
+                    <img src="Resource/img/download-downaro.svg" alt="" style="width: 70px;">
+                </div>
+                <div class="movies-box">
+                    <h1>Watch everywhere</h1>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                    <img src="Resource/img/telescope-svgrepo-com.svg" alt="">
+                </div>
+                <div class="movies-box">
+                    <h1>Create profiles for kids</h1>
+                    <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+                    <img src="Resource/img/emoji-happy-square-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="frequently-asked-questions">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-item-header">
+                    <h3>What is Netflix?</h3>
+                    <!-- <h4 style="font-size: 30px;">+</h4> -->
+                     <div class="icon-toggle">
+                        <span class="plus"><img src="Resource/img/plush-img.svg" alt="" style="filter: invert();"></span>
+                        <span class="cross"><img src="Resource/img/cross-img.svg" alt="" style="filter: invert();"></span>
+                     </div>
+                </div>
+                <pre>
+Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                </pre>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item-header">
+                    <h3>How much does Netflix cost?</h3>
+                    <!-- <h4 style="font-size: 30px;">+</h4> -->
+                     <div class="icon-toggle">
+                        <span class="plus"><img src="Resource/img/plush-img.svg" alt="" style="filter: invert();"></span>
+                        <span class="cross"><img src="Resource/img/cross-img.svg" alt="" style="filter: invert();"></span>
+                     </div>
+                </div>
+                <pre>
+Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+                </pre>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item-header">
+                    <h3>Where can I watch?</h3>
+                    <!-- <h4 style="font-size: 30px;">+</h4> -->
+                     <div class="icon-toggle">
+                        <span class="plus"><img src="Resource/img/plush-img.svg" alt="" style="filter: invert();"></span>
+                        <span class="cross"><img src="Resource/img/cross-img.svg" alt="" style="filter: invert();"></span>
+                     </div>
+                </div>
+                <pre>
+Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </pre>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item-header">
+                    <h3>How do I cancel?</h3>
+                    <!-- <h4 style="font-size: 30px;">+</h4> -->
+                     <div class="icon-toggle">
+                        <span class="plus"><img src="Resource/img/plush-img.svg" alt="" style="filter: invert();"></span>
+                        <span class="cross"><img src="Resource/img/cross-img.svg" alt="" style="filter: invert();"></span>
+                     </div>
+                </div>
+                <pre>
+Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </pre>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item-header">
+                    <h3>What can I watch on Netflix?</h3>
+                    <!-- <h4 style="font-size: 30px;">+</h4> -->
+                     <div class="icon-toggle">
+                        <span class="plus"><img src="Resource/img/plush-img.svg" alt="" style="filter: invert();"></span>
+                        <span class="cross"><img src="Resource/img/cross-img.svg" alt="" style="filter: invert();"></span>
+                     </div>
+                </div>
+                <pre>
+Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                </pre>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item-header">
+                    <h3>Is Netflix good for kids?</h3>
+                    <!-- <h4 style="font-size: 30px;">+</h4> -->
+                     <div class="icon-toggle">
+                        <span class="plus"><img src="Resource/img/plush-img.svg" alt="" style="filter: invert();"></span>
+                        <span class="cross"><img src="Resource/img/cross-img.svg" alt="" style="filter: invert();"></span>
+                     </div>
+                </div>
+                <pre>
+The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+
+Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                </pre>
+            </div>
+        </section>
+    </main>
+    <footer
+        style="display: flex; flex-direction: column; padding: 20px; gap: 30px; width: 80vw; justify-self: center; margin-bottom: 120px;">
+        <div
+            style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-direction: column; padding: 20px;">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-input-box">
+                <input type="text" placeholder="Email address"
+                    style="padding: 10px; width: max(40vw, 350px); border-radius: 5px; border: none; background-color: #160F0F; color: white; height: 50px;">
+
+                <button id="getStartedButton" style="height: 50px; font-weight: bold;">
+                    Get Started
+                    <img src="Resource/img/right-arrow-svgrepo-com.svg" alt="" style="height: 15px; filter: invert();">
+                </button>
+            </div>
+        </div>
+        <p>Questions? Call 000-800-919-1743</p>
+        <div id="footer-links">
+            <div>FAQ</div>
+            <div>Help Centre</div>
+            <div>Account</div>
+            <div>Media Centre</div>
+            <div>Investor Relations</div>
+            <div>Jobs</div>
+            <div>Ways to Watch</div>
+            <div>Terms of Use</div>
+            <div>Privacy</div>
+            <div>Cookie Preferences</div>
+            <div>Corporate Information</div>
+            <div>Contact Us</div>
+            <div>Speed Test</div>
+            <div>Legal Notices</div>
+            <div>Only on Netflix</div>
+        </div>
+        <div style=" border: 1px solid white; padding: 2px 5px; width: 110px; border-radius: 5px; display: flex;">
+            <img src="Resource/img/multilanguagelogo.svg" style="filter: invert();" alt="">
+            <select id="languageSelect" style="background-color: black; color: white; border: none; padding: 5px;">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+                <option value="bn">বাংলা</option>
+            </select>
+        </div>
+        <div style="color: #B3B3B3; display: flex; flex-direction: column; gap: 30px;">
+            <p>Netflix India</p>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="/"
+                    style="color: #448EF4;">Learn more.</a></p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+:root {
+    --primary-color: #e50914;
+    --secondary-color: #141414;
+    --faq-background-color: #323232;
+    --faq-background-color-hover: #414141;
+    --text-color: #ffffff;
+    --background-color: #000000;
+    --hover-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: min(100vh, 100vw);
+    overflow: hidden;
+    /* background-image: url(Resource/img/bg.jpg); */
+}
+
+#backgroundImage img {
+    position: absolute;
+    top: 0px;
+    opacity: 0.4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 80vw;
+    justify-self: center;
+}
+
+#header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#getStartedButton {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#header-big-text {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.banner{
+    padding: 140px 40px;
+}
+
+#banner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+#video-container video {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    display: flex;
+    width: 80vw;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+
+.movies-section {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-self: center;
+    gap: 20px;
+}
+
+.movies-list {
+    display: flex;
+    gap: 20px;
+}
+
+.movies-box{
+    width: 270px;
+    height: auto;
+    padding: 20px;
+    background-color: #1A2144;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movies-box p{
+    padding-bottom: 80px;
+}
+
+.movies-box img {
+    width: 50px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+}
+
+
+#frequently-asked-questions {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--faq-background-color);
+    padding: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-item-header:hover {
+    background-color: var(--faq-background-color-hover);
+}
+
+.faq-item pre {
+    background-color: var(--faq-background-color);
+    padding: 18px;
+    border-radius: 5px;
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/* .active {
+    display: block;
+} */
+
+.faq-item pre.active {
+    display: block;
+}
+
+/* Icon toggle styles */
+.icon-toggle {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.icon-toggle .cross {
+    display: none;
+}
+
+.faq-item-header.active .plus {
+    display: none;
+}
+
+.faq-item-header.active .cross {
+    display: inline;
+}
+
+
+.email-input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+#footer-links {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-self: center;
+    text-decoration: underline;
+    color: #B3B3B3;
+}
+
+@media screen and (max-width: 768px) {
+    #footer-links {
+        grid-template-columns: 1fr;
+    }
+
+    .email-input-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #header-big-text {
+        font-size: 30px;
+    }
+
+    .movies-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .movies-box {
+        width: 100%;
+        height: auto;
+    }
+    .banner-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+}
